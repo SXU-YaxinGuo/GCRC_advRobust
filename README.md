@@ -14,7 +14,7 @@ GCRC_roBust: Adversarial Robustness Evaluation for Chinese Gaokao Reading Compre
   + 孙欣伊（山西大学博士生）
   + 闫国航（山西大学硕士生）
   
-&emsp;&emsp;评测任务详细内容可查看评测网站： https://github.com/SXU-YaxinGuo/GCRC_advRobust ，遇到任何问题请发邮件或在Issue中提问，欢迎大家参与。
+&emsp;&emsp;评测任务基线模型及评价脚本可查看链接： https://github.com/SXU-YaxinGuo/GCRC_advRobust ，遇到任何问题请发邮件或在Issue中提问，欢迎大家参与。
 ## 2.评测数据
 ### 对抗攻击策略：
 - 关键词扰动策略：通过词语替换或重新表述，对影响选项语义的关键词进行干扰。   
@@ -95,7 +95,7 @@ GCRC_roBust: Adversarial Robustness Evaluation for Chinese Gaokao Reading Compre
 参赛者须将验证集和测试集每条样例拆分成原始题目、正对抗题目和负对抗题目作为模型的输入，并得到对应的三个答案。其中原始题目字段集为<id,title,passage,question,options,answer>；正对抗题目字段集为<id,title,passage,question,positive_options,positive_answer>；负对抗题目字段集为<id,title,passage,negative_question,negative_options,negative_answer>。
 ##### 注意：模型输出与验证集格式保持一致。
 ### 基线系统
-本次评测使用的阅读理解基线系统为开源的中文预训练模型MacBERT[9]。基线系统的说明将在智源指数平台上发布。
+本次评测使用的阅读理解基线系统为开源的中文预训练模型MacBERT[9]。
 ## 3.评价标准
 参赛系统的最终得分由Acc_0、Acc_1、Acc_2三个指标综合决定，具体计算公式如下：    
 Score=0.2\*Acc_0+0.3\*Acc_1+0.5\*Acc_2    
