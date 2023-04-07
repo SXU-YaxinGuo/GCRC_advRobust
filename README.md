@@ -41,7 +41,8 @@ GCRC_roBust: Adversarial Robustness Evaluation for Chinese Gaokao Reading Compre
 1. 正确选项指与原文意思相符的选项；错误选项指与原文意思不符的选项；正对抗选项与原始选项正误相同；负对抗选项与原始选项正误相反。    
 2. 推理逻辑扰动策略主要攻击由原文经过归纳推理或演绎推理得出结论的推理过程。    
 ### 数据集规模
-本评测提供GCRC原始数据作为训练集，题目数为6994，提供GCRC_advRobust作为验证集与测试集。GCRC_advRobust数据集规模如表所示。    
+本评测提供GCRC原始数据作为训练集，题目数为6994，提供GCRC_advRobust作为验证集与测试集。GCRC_advRobust数据集规模如表所示。     
+
 |数据集划分|验证集|测试集|
 | :----- :|:----- :|:-----: |
 |问题/选项数量|336/1344|288/1152|	 
@@ -49,6 +50,7 @@ GCRC_roBust: Adversarial Robustness Evaluation for Chinese Gaokao Reading Compre
 推理逻辑扰动选项数量|619|543|
 因果关系扰动选项数量|192|172|
 时空属性扰动选项数量|29|19|
+
 ### 数据样例
 验证集和测试集中的每条数据包含以下内容：编号(id）、标题(title)、文章(passage)、原始问题(question)、原始选项(options)、原始答案(answer)、正对抗选项（positive_options）、正对抗答案(positive_answer)、负对抗问题（negative_question）、负对抗选项（negative_options）、负对抗答案(negative_answer)。     
 具体数据样例如下所示：     
