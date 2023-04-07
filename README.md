@@ -1,6 +1,5 @@
 # CCL23-Eval汉语高考阅读理解对抗鲁棒评测
 GCRC_roBust: Adversarial Robustness Evaluation for Chinese Gaokao Reading Comprehension   
-## 3.任务简介
 &emsp;&emsp;机器阅读理解模型的鲁棒性是衡量该技术能否在实际应用中大规模落地的关键[1]。随着技术的进步，现有模型已经能够在封闭测试集上取得较好的性能，但在面向开放、动态、真实环境下的推理与决策时，其鲁棒性仍表现不佳[2-5]。为了评估模型的鲁棒性，现有工作主要通过添加文本噪声[6]或对问题进行复述[7]来干扰原始题目，但这类方法的攻击方式比较单一，题目难度也相对较小，对衡量模型性能存在一定局限性。     
 &emsp;&emsp;为了提升机器阅读理解模型在复杂、真实对抗环境下的鲁棒性，我们基于“CCL2022-高考语文阅读理解可解释评测”数据集GCRC[8]（The dataset of Gaokao Chinese Reading Comprehension），构建了对抗鲁棒子集GCRC_advRobust，并提出“汉语高考阅读理解对抗鲁棒评测”任务。不同于“CCL2022-高考语文阅读理解可解释评测”主要对模型的中间推理能力进行可解释性评价，本次评测设计了四种对抗攻击策略（关键词扰动、推理逻辑扰动、时空属性扰动、因果关系扰动），重点挑战模型在多种对抗攻击下的鲁棒性。     
 &emsp;&emsp;本次评测设置了开放和封闭两个赛道，其中开放赛道中，参赛队伍可以使用ChatGPT、文心一言等大模型；封闭赛道中，参赛的模型参数量最多不超过1.5倍Bert-large（510M）。    
@@ -14,8 +13,8 @@ GCRC_roBust: Adversarial Robustness Evaluation for Chinese Gaokao Reading Compre
   + 孙欣伊（山西大学博士生）
   + 闫国航（山西大学硕士生）
   
-&emsp;&emsp;评测任务详细内容可查看评测网站：https://github.com/SXU-YaxinGuo/GCRC_advRobust，遇到任何问题请发邮件或在Issue中提问，欢迎大家参与。
-##1.任务简介
+&emsp;&emsp;评测任务详细内容可查看评测网站： https://github.com/SXU-YaxinGuo/GCRC_advRobust ，遇到任何问题请发邮件或在Issue中提问，欢迎大家参与。
+## 1.任务简介
 &emsp;&emsp;我们根据GCRC数据集中原始题目的四个选项所涉及到的推理能力，设计相应的对抗攻击策略，为每个选项构建了一个正对抗选项和一个负对抗选项，形成了对抗鲁棒子集GCRC_advRobust。该子集的每条数据由原始题目及其正负对抗题目三者组成。其中原始题目包含文章、问题和原始选项集合；正对抗题目包含文章、问题和正对抗选项集合；负对抗题目包含文章、负对抗问题和负对抗选项集合。
 评测要求参赛者输出原始题目及其对抗题目的答案。
 ## 2.评测数据
