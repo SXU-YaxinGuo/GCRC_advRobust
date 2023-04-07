@@ -42,7 +42,6 @@ GCRC_roBust: Adversarial Robustness Evaluation for Chinese Gaokao Reading Compre
 2. 推理逻辑扰动策略主要攻击由原文经过归纳推理或演绎推理得出结论的推理过程。    
 ### 数据集规模
 本评测提供GCRC原始数据作为训练集，题目数为6994，提供GCRC_advRobust作为验证集与测试集。GCRC_advRobust数据集规模如表所示。    
-
 |数据集划分|验证集|测试集|
 | :----- :|:----- :|:-----: |
 |问题/选项数量|336/1344|288/1152|	 
@@ -50,7 +49,6 @@ GCRC_roBust: Adversarial Robustness Evaluation for Chinese Gaokao Reading Compre
 推理逻辑扰动选项数量|619|543|
 因果关系扰动选项数量|192|172|
 时空属性扰动选项数量|29|19|
-
 ### 数据样例
 验证集和测试集中的每条数据包含以下内容：编号(id）、标题(title)、文章(passage)、原始问题(question)、原始选项(options)、原始答案(answer)、正对抗选项（positive_options）、正对抗答案(positive_answer)、负对抗问题（negative_question）、负对抗选项（negative_options）、负对抗答案(negative_answer)。     
 具体数据样例如下所示：     
@@ -110,6 +108,7 @@ Acc_2=原始选项和两个对抗题目均正确预测个数/题目总数
 ### 赛程安排：
 + 报名时间：2023年4月10日-5月20日
 + 训练、验证、测试数据发布：2023年4月10日
+  + 报名结束后在智源指数平台上获取评测数据
 + 提交测试结果：2023年6月1日
 + 公布测试结果：2023年6月10日
 + 中英文技术报告提交：2023年6月20日
@@ -129,7 +128,7 @@ GCRC_advRobust.zip
 &emsp;&emsp;GCRC_advRobust.json   
 &emsp;&emsp;model.zip   
 &emsp;&emsp;GCRC_advRobust.docx   
-##5.奖项设置
+## 5.奖项设置
 开放赛道和封闭赛道都将评选出如下奖项。由中国中文信息学会计算语言学专委会（CIPS-CL）为获奖队伍提供荣誉证书。
 
 |奖项	|一等奖|	二等奖|	三等奖|
