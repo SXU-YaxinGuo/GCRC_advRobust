@@ -51,10 +51,14 @@ GCRC_roBust: Adversarial Robustness Evaluation for Chinese Gaokao Reading Compre
 | 因果关系扰动选项数量| 192 | 172 |
 | 时空属性扰动选项数量 | 29 | 19 |
 
-|奖项	|一等奖|	二等奖|	三等奖|
-|:-----:|:----:|:----:|:----:|
-|数量	|1名|	2名	|3名|
-|奖励	|荣誉证书	|荣誉证书	|荣誉证书|
+|数据集划分	|验证集|	测试集|
+|:-----:|:----:|:----:|
+|问题/选项数量	|336/1344 |	288/1152	|
+|关键字词扰动选项数量	|荣誉证书	|荣誉证书	|
+|推理逻辑扰动选项数量	|1名|	2名	|
+|因果关系扰动选项数量	|荣誉证书	|荣誉证书	|
+|时空属性扰动选项数量	|1名|	2名	|
+
 ### 数据样例
 验证集和测试集中的每条数据包含以下内容：编号(id）、标题(title)、文章(passage)、原始问题(question)、原始选项(options)、原始答案(answer)、正对抗选项（positive_options）、正对抗答案(positive_answer)、负对抗问题（negative_question）、负对抗选项（negative_options）、负对抗答案(negative_answer)。     
 具体数据样例如下所示：     
