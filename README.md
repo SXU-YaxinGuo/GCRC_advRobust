@@ -50,6 +50,7 @@ GCRC_advRobust: Adversarial Robustness Evaluation for Chinese Gaokao Reading Com
 | 推理逻辑扰动选项数量|  619  |  543  |
 | 因果关系扰动选项数量| 192 | 172 |
 | 时空属性扰动选项数量 | 29 | 19 |
+
 &emsp;&emsp;标注数据由json格式给出，数据集包含以下内容：
 + train_GCRC.json：GCRC原始训练集
 + dev_GCRCadvrobust.json：GCRC_advRobust验证集
