@@ -14,7 +14,7 @@ GCRC_advRobust: Adversarial Robustness Evaluation for Chinese Gaokao Reading Com
   + 孙欣伊（山西大学博士生）
   + 闫国航（山西大学硕士生）
   
-&emsp;&emsp;评测任务详细内容及数据下载与提交须查看智源指数平台网站： https://github.com/SXU-YaxinGuo/GCRC_advRobust ，遇到任何问题请在选手交流群（755173513）或Issues中提问，欢迎大家参与。
+&emsp;&emsp;评测任务详细内容及数据下载与提交须查看智源指数平台网站（**待公布**），遇到任何问题请在选手交流群（755173513）或Issues中提问，欢迎大家参与。
 ## 2.评测数据
 ### 对抗攻击策略：
 - 关键词扰动策略：通过词语替换或重新表述，对影响选项语义的关键词进行干扰。   
