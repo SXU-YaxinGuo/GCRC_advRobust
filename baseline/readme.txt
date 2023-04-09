@@ -1,5 +1,6 @@
 
 1.下载hfl-chinese-macbert-large模型文件（包括bert_config.json，pytorch_model.bin,vocab.txt）放到hfl-chinese-macbert-large文件夹中,下载链接：https://huggingface.co/hfl
+2.在智源指数平台上获取数据放到./data/advRobust_data文件夹
 2.运行create_csv.py 获得训练集、验证集、测试集的.csv格式作为输入
 
 3. 训练
