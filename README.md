@@ -164,9 +164,7 @@ GCRC_advRobust.zip
     + 使用小号、串通、剽窃他人代码等涉嫌违规、作弊行为；
     + 团队提交的材料内容不完整，或提交任何虚假信息；
     + 参赛团队无法就作品疑议进行足够信服的解释说明；    
-+ 如需使用本数据集进行课题研究及论文发表，应公开声明使用了山西大学提供的数据，并进行如下引用：    
-TAN H, WANG X, JI Y, et al. GCRC: A New Challenging MRC Dataset from Gaokao Chinese for Explainable Evaluation[C]//Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021. 2021: 1319-1330.      
-同时发信给tanhongye@sxu.edu.cn，说明相关情况。
++ 如需使用本数据集进行课题研究及论文发表，应公开声明使用了山西大学提供的数据。
 ### 评测单位
 山西大学 合肥工业大学
 
