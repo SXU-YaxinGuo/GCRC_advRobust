@@ -99,7 +99,7 @@ GCRC_advRobust: Adversarial Robustness Evaluation for Chinese Gaokao Reading Com
 参赛者须将验证集和测试集每条样例拆分成原始题目、正对抗题目和负对抗题目作为模型的输入，并得到对应的三个答案。其中原始题目字段集为<id,title,passage,question,options,answer>；正对抗题目字段集为<id,title,passage,question,positive_options,positive_answer>；负对抗题目字段集为<id,title,passage,negative_question,negative_options,negative_answer>。
 ##### 注意：模型输出与验证集格式保持一致。
 ### 基线系统
-本次评测使用的阅读理解基线系统为开源的中文预训练模型MacBERT[9]。基线系统说明请查看[链接](https://github.com/SXU-YaxinGuo/GCRC_advRobust)。
+本次评测使用的阅读理解基线系统为开源的中文预训练模型MacBERT[8]。基线系统说明请查看[链接](https://github.com/SXU-YaxinGuo/GCRC_advRobust)。
 ## 3.评价标准
 参赛系统的最终得分由Acc_0、Acc_1、Acc_2三个指标综合决定，具体计算公式如下：    
 Score=0.2\*Acc_0+0.3\*Acc_1+0.5\*Acc_2    
@@ -175,7 +175,7 @@ GCRC_advRobust.zip
 [4] Ren F, Liu Y, Li B, et al. An Understanding-Oriented Robust Machine Reading Comprehension Model[J]. ACM Transactions on Asian and Low-Resource Language Information Processing, 2022, 22(2): 1-23.   
 [5] Wee Chung Gan and Hwee Tou Ng. 2019. Improving the Robustness of Question Answering Systems to Question Paraphrasing[C]. In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics. 6065–6075.    
 [6] Jakub Náplava, Martin Popel, Milan Straka, and Jana Straková. 2021. Understanding Model Robustness to User-generated Noisy Texts[C]. In Proceedings of the Seventh Workshop on Noisy User-generated Text (W-NUT2021). Association for Computational Linguistics, Online, 340–350. https://doi.org/10.18653/v1/2021.wnut-1.38     
-[7] Tan H, Wang X, Ji Y, et al. GCRC: A new challenging MRC dataset from Gaokao Chinese for explainable evaluation[C]//Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021. 2021: 1319-1330.    
+[7] Hongxuan Tang, Hongyu Li, Jing Liu, Yu Hong, Hua Wu, and Haifeng Wang. 2021. DuReader_robust: A Chinese Dataset Towards Evaluating Robustness and Generalization of Machine Reading Comprehension in Real-World Applications[C]. In Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 2: Short Papers). Association for Computational Linguistics, Online, 955–963. https://aclanthology.org/2021.acl-short.120
 [8] Cui Y, Che W, Liu T, et al. Revisiting pre-trained models for Chinese natural language processing[C]//Findings of the Association for Computational Linguistics: EMNLP 2020. 2020: 657-668.    
 
 
