@@ -2,7 +2,7 @@
 GCRC_advRobust: Adversarial Robustness Evaluation for Chinese Gaokao Reading Comprehension   
 ## 1.任务简介
 &emsp;&emsp;机器阅读理解模型的鲁棒性是衡量该技术能否在实际应用中大规模落地的关键[1]。随着技术的进步，现有模型已经能够在封闭测试集上取得较好的性能，但在面向开放、动态、真实环境下的推理与决策时，其鲁棒性仍表现不佳[2-5]。为了评估模型的鲁棒性，现有工作主要通过添加文本噪声[6]或对问题进行复述[7]来干扰原始题目，但这类方法的攻击方式比较单一，题目难度也相对较小，对衡量模型性能存在一定局限性。     
-&emsp;&emsp;为了提升机器阅读理解模型在复杂、真实对抗环境下的鲁棒性，我们基于“CCL2022-高考语文阅读理解可解释评测”数据集GCRC[8]（The dataset of Gaokao Chinese Reading Comprehension），构建了对抗鲁棒子集GCRC_advRobust，并提出“汉语高考阅读理解对抗鲁棒评测”任务。不同于“CCL2022-高考语文阅读理解可解释评测”主要对模型的中间推理能力进行可解释性评价，本次评测设计了四种对抗攻击策略（关键词扰动、推理逻辑扰动、时空属性扰动、因果关系扰动），重点挑战模型在多种对抗攻击下的鲁棒性。     
+&emsp;&emsp;为了提升机器阅读理解模型在复杂、真实对抗环境下的鲁棒性，我们基于“CCL2022-高考语文阅读理解可解释评测”数据集GCRC（The dataset of Gaokao Chinese Reading Comprehension），构建了对抗鲁棒子集GCRC_advRobust，并提出“汉语高考阅读理解对抗鲁棒评测”任务。不同于“CCL2022-高考语文阅读理解可解释评测”主要对模型的中间推理能力进行可解释性评价，本次评测设计了四种对抗攻击策略（关键词扰动、推理逻辑扰动、时空属性扰动、因果关系扰动），重点挑战模型在多种对抗攻击下的鲁棒性。     
 &emsp;&emsp;本次评测设置了开放和封闭两个赛道，其中开放赛道中，参赛队伍可以使用ChatGPT、文心一言等大模型；封闭赛道中，参赛的模型参数量最多不超过1.5倍Bert-large（510M）。    
 + 组织者
   + 谭红叶（山西大学）
@@ -174,9 +174,8 @@ GCRC_advRobust.zip
 [3] Mantong Zhou, Minlie Huang, and Xiaoyan Zhu. 2020. Robust Reading Comprehension With Linguistic Constraints via Posterior Regularization[J]. IEEE Transactions on Audio, Speech, and Language Processing 28 (2020), 2500–2510.    
 [4] Ren F, Liu Y, Li B, et al. An Understanding-Oriented Robust Machine Reading Comprehension Model[J]. ACM Transactions on Asian and Low-Resource Language Information Processing, 2022, 22(2): 1-23.   
 [5] Wee Chung Gan and Hwee Tou Ng. 2019. Improving the Robustness of Question Answering Systems to Question Paraphrasing[C]. In Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics. 6065–6075.    
-[6] Jakub Náplava, Martin Popel, Milan Straka, and Jana Straková. 2021. Understanding Model Robustness to User-generated Noisy Texts[C]. In Proceedings of the Seventh Workshop on Noisy User-generated Text (W-NUT2021). Association for Computational Linguistics, Online, 340–350. https://doi.org/10.18653/v1/2021.wnut-1.38    
-[7] Hongxuan Tang, Hongyu Li, Jing Liu, Yu Hong, Hua Wu, and Haifeng Wang. 2021. DuReader_robust: A Chinese Dataset Towards Evaluating Robustness and Generalization of Machine Reading Comprehension in Real-World Applications[C]. In Proceedings of the 59th Annual Meeting of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing (Volume 2: Short Papers). Association for Computational Linguistics, Online, 955–963. https://aclanthology.org/2021.acl-short.120     
-[8] Tan H, Wang X, Ji Y, et al. GCRC: A new challenging MRC dataset from Gaokao Chinese for explainable evaluation[C]//Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021. 2021: 1319-1330.    
-[9] Cui Y, Che W, Liu T, et al. Revisiting pre-trained models for Chinese natural language processing[C]//Findings of the Association for Computational Linguistics: EMNLP 2020. 2020: 657-668.    
+[6] Jakub Náplava, Martin Popel, Milan Straka, and Jana Straková. 2021. Understanding Model Robustness to User-generated Noisy Texts[C]. In Proceedings of the Seventh Workshop on Noisy User-generated Text (W-NUT2021). Association for Computational Linguistics, Online, 340–350. https://doi.org/10.18653/v1/2021.wnut-1.38     
+[7] Tan H, Wang X, Ji Y, et al. GCRC: A new challenging MRC dataset from Gaokao Chinese for explainable evaluation[C]//Findings of the Association for Computational Linguistics: ACL-IJCNLP 2021. 2021: 1319-1330.    
+[8] Cui Y, Che W, Liu T, et al. Revisiting pre-trained models for Chinese natural language processing[C]//Findings of the Association for Computational Linguistics: EMNLP 2020. 2020: 657-668.    
 
 
